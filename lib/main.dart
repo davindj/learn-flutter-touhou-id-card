@@ -3,13 +3,20 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     const MaterialApp(
-      home: NinjaCard(),
+      home: TouhouCard(),
     ),
   );
 }
 
-class NinjaCard extends StatelessWidget {
-  const NinjaCard({super.key});
+class TouhouCard extends StatefulWidget {
+  const TouhouCard({super.key});
+
+  @override
+  State<TouhouCard> createState() => _TouhouCardState();
+}
+
+class _TouhouCardState extends State<TouhouCard> {
+  int danmakuLevel = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +27,15 @@ class NinjaCard extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            danmakuLevel += 1;
+          });
+        },
+        backgroundColor: Colors.grey[800],
+        child: Icon(Icons.add),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
@@ -63,7 +79,7 @@ class NinjaCard extends StatelessWidget {
             ),
             const SizedBox(height: 10.0),
             Text(
-              '9',
+              '$danmakuLevel',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 letterSpacing: 2.0,
