@@ -1,16 +1,5 @@
-# ninja_id
+# Touhou ID Card
+A simple profile page for the most hardworking touhou character (Marisa!). This project is actually part of my flutter learning journey. Also highly inspired by [Net Ninja's ID Card Flutter App](https://youtu.be/c063ddhWafo?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+![](./src-readme/screenshot.jpg)

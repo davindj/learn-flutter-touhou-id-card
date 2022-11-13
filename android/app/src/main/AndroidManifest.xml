@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ninja_id">
    <application
-        android:label="ninja_id"
+        android:label="Touhou Id Card"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
